@@ -1,12 +1,15 @@
+# assign initial values
 meal = 20
 tax = 8.25
 tip = 18
 
+# calculate computed values
 tax_value = meal * (tax/100)
 meal_with_tax = meal + tax_value
 tip_value = meal_with_tax * (tip/100)
 total_cost = meal_with_tax+tip_value
 
+# display the results
 puts "The pre-tax cost of your meal was $" + sprintf("%.2f", meal)
 puts "At #{tax}%, tax for this meal is $" + sprintf("%.2f",tax_value)
 puts "For a #{tip}% tip, you should leave $" + sprintf("%.2f",tip_value)
